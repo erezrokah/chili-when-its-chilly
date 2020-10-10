@@ -1,0 +1,22 @@
+.sponsors
+{
+  width: 700px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.sponsors img
+{
+  width: 200px;
+}
+
+.sponsors img:not(.active)
+{
+  display: none;
+}
+
+.sponsors img.end
+{
+  /* FIXME Doesn't keep them in order */
+  float: right;
+}

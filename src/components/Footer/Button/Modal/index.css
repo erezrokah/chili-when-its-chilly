@@ -1,0 +1,33 @@
+#modal
+{
+  background-color: var(--military-primary);
+  position: fixed;
+  bottom: 78px; /* FIXME Figure out how to make this in relationship to #footer */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s linear;
+  width: 100%;
+  z-index: 1;
+  border: 5px solid var(--military-highlight);
+  padding: 10px;
+  color: var(--military-blank);
+  display: flex;
+  flex-direction: column;
+}
+
+#modal button
+{
+  font-weight: bold;
+}
+
+#modal.closed
+{
+  bottom: -10% /* FIXME */
+}
+
+.close-button
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

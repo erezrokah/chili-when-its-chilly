@@ -1,0 +1,33 @@
+#footer
+{
+  background-color: var(--military-primary);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  padding: 10px;
+}
+
+#button-tray
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+#button-tray > .cause
+{
+  grid-column-start: 3;
+}
+
+#button-tray > .cart
+{
+  grid-column-start: 4;
+}
+
+#button-tray > .menu
+{
+  grid-column-start: 5;
+}

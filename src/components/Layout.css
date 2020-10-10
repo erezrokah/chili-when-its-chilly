@@ -1,0 +1,40 @@
+:root {
+  --american-red: #FF0000;
+  --american-white: #FFFFFF;
+  --american-blue: #0000FF;
+  --american-grey: #CECECE;
+  --military-primary: #515547;
+  --military-secondary: #34362D;
+  --military-highlight: #FFFF00;
+  --military-blank: #E5E5E5;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  padding-top: 100px; /* FIXME Account for fixed header properly */
+  padding-bottom: 100px; /* FIXME Account for fixed footer properly */
+}
+
+.main-display
+{
+  max-width: 800px;
+  margin: auto;
+}
+
+button
+{
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-us
+{
+  display: block;
+}
+
+#website-by-jared
+{
+  display: block;
+}

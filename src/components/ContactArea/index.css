@@ -1,0 +1,56 @@
+.contact-area
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2.5px;
+}
+
+.mailing-list
+{
+  grid-row-end: span 2;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.join-our-list
+{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 12.5px;
+}
+
+.enter-email
+{
+  height: 30px;
+}
+
+.send-email
+{
+  margin-left: 5px;
+  height: 35px;
+  width: 70px;
+}
+
+.social-media
+{
+  grid-column-start: 2;
+  width: 50px;
+  border-radius: 25%;
+  margin-left: 5px;
+}
+
+.twitter
+{
+  grid-row-start: 1;
+  fill: white;
+  background-color: #1976d2;
+}
+
+.facebook
+{
+  grid-row-start: 2;
+  fill: white;
+  background-color: #115293;
+}
