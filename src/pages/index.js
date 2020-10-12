@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Section from '../components/Section'
 import ContactArea from '../components/ContactArea'
 import Slideshow from '../components/Slideshow'
 import Sponsors from '../components/Sponsors'
@@ -53,15 +54,21 @@ function HomePage() {
       <Slideshow images={images} />
       { /* Ticket purchase */ }
       <ContactArea />
-      { /* Content Group (When/Where/Why) */ }
-      { /* Content Group (FAQ's) */ }
-      <Sponsors sponsors={sponsors} />
-      <span className="contact-us">
-        Contact us at info@chiliwhenitschilly.com
-      </span>
-      <span id="website-by-jared">
-        Website by <a href="https://jared-weide-portfolio.web.app/">Jared Weide</a>
-      </span>
+      <Section isFirst={true}>
+        Content Group (When/Where/Why)
+      </Section>
+      <Section>
+        Content Group (FAQ's) 
+      </Section>
+      <Section isLast={true}>
+        <Sponsors sponsors={sponsors} />
+        <span className="contact-us">
+          Contact us at info@chiliwhenitschilly.com
+        </span>
+        <span id="website-by-jared">
+          Website by <a href="https://jared-weide-portfolio.web.app/">Jared Weide</a>
+        </span>
+      </Section>
     </Layout>
   )
 }
