@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "chili-when-its-chili",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A website for the Chili When It's Chilly cook-out. CWIC is a weekend full of cooking contests, musical guests, and fun for the whole family. This npm project is built with Gatsby for use with a CMS.",
+  "author": "theredwillow",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
