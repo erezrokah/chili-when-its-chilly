@@ -18,6 +18,7 @@ function Slideshow({images}) {
         // FIXME Low Res Images
         return (
           <img
+            key={image.title}
             className={(slideIndex === i) ? 'active' : ''}
             src={image.fluid.src}
             alt={image.title}
@@ -27,6 +28,7 @@ function Slideshow({images}) {
       <div className="dots">
         {images.map((_, i) => (
           <span
+            key={`dot-${i}`}
             className={`dot ${(slideIndex === i) ? 'active' : ''}`}
             onClick={() => setSlideIndex(i)}
           ></span>

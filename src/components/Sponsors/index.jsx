@@ -26,6 +26,7 @@ function Sponsors({sponsors}) {
       {sponsors.map((sponsor, i) => {
         return (
           <img
+            key={sponsor.name}
             className={`${isActive(i) ? 'active' : ''} ${isAtEnd(i) ? 'active end' : ''}`}
             src={sponsor.image}
             alt={`Visit our sponsor, ${sponsor.name}`}

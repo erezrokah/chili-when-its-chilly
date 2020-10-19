@@ -3,9 +3,9 @@ import './index.css'
 
 function TheCause() {
   return (
-    <div id='the-cause'>
+    <>
       <div id="bunting">The Cause: <b>Helping Veterans</b></div>
-      <iframe title="What is Boot Campaign?" width="560" height="315" src="https://www.youtube.com/embed/9xD5Sq_PsI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe title="What is Boot Campaign?" src="https://www.youtube.com/embed/9xD5Sq_PsI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
       <div id="mission-statement">
         Boot Campaign's mission is to connect the more than 99% who have not served with the less than 1% who have by igniting the inner patriot in all Americans and providing life-improving programs for veterans and military families to bridge the divide between military life and civilian life.
 
@@ -23,7 +23,7 @@ function TheCause() {
       </div>
       <button id="donate">Donate</button>
       <span id="tax-deductible">All donations are tax deductible!</span>
-    </div>
+    </>
   )
 }
 

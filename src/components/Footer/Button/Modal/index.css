@@ -2,14 +2,14 @@
 {
   background-color: var(--military-primary);
   position: fixed;
-  bottom: 78px; /* FIXME Figure out how to make this in relationship to #footer */
+  bottom: calc(var(--header-size) * 1.25);
+  max-height: calc((100% - (2.5 * var(--header-size)) - var(--header-padding)));
   left: 50%;
   transform: translateX(-50%);
-  transition: bottom 1s linear;
-  width: 100%;
+  transition: top 1s linear;
   z-index: 1;
   border: 5px solid var(--military-highlight);
-  padding: 10px;
+  padding: 20px;
   color: var(--military-blank);
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 
 #modal.closed
 {
-  bottom: -10% /* FIXME */
+  top: 100vh;
 }
 
 .close-button

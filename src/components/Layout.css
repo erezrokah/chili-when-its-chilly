@@ -7,13 +7,25 @@
   --military-secondary: #34362D;
   --military-highlight: #FFFF00;
   --military-blank: #E5E5E5;
+
+  --header-size: 7.5vh;
+  --header-padding: 10px;
 }
 
 body {
   margin: 0;
   text-align: center;
-  padding-top: 100px; /* FIXME Account for fixed header properly */
-  padding-bottom: 100px; /* FIXME Account for fixed footer properly */
+  padding-top: calc(var(--header-size) * 5); /* FIXME Account for big header at beginning */
+  padding-bottom: var(--header-size);
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 .main-display

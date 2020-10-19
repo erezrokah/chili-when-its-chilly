@@ -1,11 +1,13 @@
 #footer
 {
   background-color: var(--military-primary);
+  height: calc(var(--header-size) * 1.25);
+  min-height: 25px;
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: 2;
-  padding: 10px;
+  padding: 5px;
 }
 
 #button-tray

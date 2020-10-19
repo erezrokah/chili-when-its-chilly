@@ -11,7 +11,7 @@
 {
   max-height: 200px; /* FIXME */
   overflow-y: auto;
-  margin: 5px; /* FIXME */
+  margin: 5px;
   padding: 10px;
 }
 
@@ -37,12 +37,11 @@
 #donate
 {
   background-color: var(--military-highlight);
-  margin: 5px; /* FIXME */
-  padding: 10px; /* FIXME */
+  margin: 5px;
+  padding: 10px;
 }
 
 #tax-deductible
 {
-  display: block;
   font-size: small;
 }

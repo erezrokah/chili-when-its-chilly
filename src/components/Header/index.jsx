@@ -1,20 +1,25 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+// import { graphql, useStaticQuery } from 'gatsby'
 import './index.css'
+import './animations.css'
+import Logo from './logo'
 
 function Header() {
-  const data = useStaticQuery(graphql`
-    query SiteTitle {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitle {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <div id="header">
-      {data.site.siteMetadata.title}
+      <div className="main-display">
+        <Logo />
+        (Guitar here)
+      </div>
     </div>
   )
 }
